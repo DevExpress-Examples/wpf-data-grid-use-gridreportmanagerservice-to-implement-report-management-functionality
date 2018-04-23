@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="ReportManagerServiceExample.Views.MainView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+    xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+    xmlns:dxrudex="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesignerextensions"
+    xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+    xmlns:ViewModels="clr-namespace:ReportManagerServiceExample.ViewModels"
+    mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="300"
+    DataContext="{dxmvvm:ViewModelSource Type=ViewModels:MainViewModel}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <dxr:RibbonControl Grid.Row="0" RibbonStyle="Office2010">
+            <dxr:RibbonControl.ToolbarItems>
+                <dxb:BarButtonItemLink BarItemName="newItem"/>
+            </dxr:RibbonControl.ToolbarItems>
+            <dxr:RibbonDefaultPageCategory>
+                <dxr:RibbonPage Caption="Home">
+                    <dxr:RibbonPageGroup>
+                        <dxb:BarSplitButtonItem Content="Reports" ActAsDropDown="True" LargeGlyph="{dx:DXImage Image=Print_32x32.png}" Glyph="{dx:DXImage Image=Print_16x16.png}">
+                            <dxmvvm:Interaction.Behaviors>
+                                <dxrudex:ReportManagerBehavior Service="{Binding ElementName=EmployeesReportService}" />
+                            </dxmvvm:Interaction.Behaviors>
+                        </dxb:BarSplitButtonItem>
+                    </dxr:RibbonPageGroup>
+                </dxr:RibbonPage>
+            </dxr:RibbonDefaultPageCategory>
+        </dxr:RibbonControl>
+        <dxg:GridControl Grid.Row="1" ItemsSource="{Binding Employees}" Name="grid">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="EmployeeID" />
+                <dxg:GridColumn FieldName="Name" />
+                <dxg:GridColumn FieldName="Department"/>
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.TotalSummary>
+                <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />
+            </dxg:GridControl.TotalSummary>
+            <dxg:GridControl.View>
+                <dxg:TableView AllowPerPixelScrolling="True" ShowFixedTotalSummary="True">
+                    <dxmvvm:Interaction.Behaviors>
+                        <dxrudex:GridReportManagerService x:Name="EmployeesReportService"/>
+                    </dxmvvm:Interaction.Behaviors>
+                </dxg:TableView>
+            </dxg:GridControl.View>
+        </dxg:GridControl>
+    </Grid>
+</UserControl>
