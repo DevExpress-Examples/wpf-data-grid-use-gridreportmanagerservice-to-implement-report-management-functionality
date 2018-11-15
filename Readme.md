@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainViewModel.cs](./CS/ReportManagerServiceExample/ViewModels/MainViewModel.cs) (VB: [MainViewModel.vb](./VB/ReportManagerServiceExample/ViewModels/MainViewModel.vb))
+* [MainView.xaml](./CS/ReportManagerServiceExample/Views/MainView.xaml) (VB: [MainView.xaml](./VB/ReportManagerServiceExample/Views/MainView.xaml))
+<!-- default file list end -->
 # How to: Implement the report management functionality by using GridReportManagerService
 
 
