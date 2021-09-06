@@ -1,5 +1,5 @@
 Microsoft Visual Studio Solution File, Format Version 14.00
-# Visual Studio 2015VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2012
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportManagerServiceExample", "ReportManagerServiceExample\ReportManagerServiceExample.csproj", "{74302036-9B1F-4272-80D5-0A8CF1295C10}"
 EndProject

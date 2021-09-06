@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ReportManagerServiceExample</RootNamespace>
+    <AssemblyName>ReportManagerServiceExample</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <Platforms>x86;AnyCPU</Platforms>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Moq.Silverlight, Version=4.2.1502.911, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Charts" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Charts.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.CodeParser" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Data" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.DataAccess" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Diagram.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Images" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Office.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Pdf.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.PivotGrid.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Reporting.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Export" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Sparkline.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Utils" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Utils.UI" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Win.Printing" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Diagram" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Docking" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.DocumentViewer.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.ExpressionEditor" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Grid.Core" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.LayoutControl" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Reporting" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Ribbon" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2016Colorful" Version="21.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="21.1.*-*" />
+  </ItemGroup>
+</Project>
