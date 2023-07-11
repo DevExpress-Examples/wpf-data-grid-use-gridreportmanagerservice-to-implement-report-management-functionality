@@ -1,7 +1,8 @@
-﻿Imports System.Windows
+Imports System.Windows
 
 Namespace ReportManagerServiceExample
-    Partial Public Class App
+
+    Public Partial Class App
         Inherits Application
 
         Private Sub OnAppStartup_UpdateThemeName(ByVal sender As Object, ByVal e As StartupEventArgs)

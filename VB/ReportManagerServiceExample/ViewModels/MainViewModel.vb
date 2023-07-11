@@ -1,11 +1,14 @@
-﻿Imports System.Collections.ObjectModel
+Imports System.Collections.ObjectModel
 Imports DevExpress.Mvvm.DataAnnotations
 Imports DevExpress.Mvvm.POCO
 
 Namespace ReportManagerServiceExample.ViewModels
-    <POCOViewModel> _
+
+    <POCOViewModel>
     Public Class MainViewModel
-        Public Overridable Property Employees() As ObservableCollection(Of EmployeeViewModel)
+
+        Public Overridable Property Employees As ObservableCollection(Of EmployeeViewModel)
+
         Public Sub New()
             Employees = New ObservableCollection(Of EmployeeViewModel)()
             Employees.Add(ViewModelSource.Create(Function() New EmployeeViewModel() With {.Name = "Frankie West PhD", .Department = "Music", .EmployeeID = 0}))
