@@ -10,18 +10,16 @@
     xmlns:dxrudex="http://schemas.devexpress.com/winfx/2008/xaml/reports/userdesignerextensions"
     xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
     xmlns:ViewModels="clr-namespace:ReportManagerServiceExample.ViewModels"
-    mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="300"
-    DataContext="{dxmvvm:ViewModelSource Type=ViewModels:MainViewModel}">
+    mc:Ignorable="d" d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <ViewModels:MainViewModel/>
+    </UserControl.DataContext>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
+            <RowDefinition />
         </Grid.RowDefinitions>
-        <dxr:RibbonControl Grid.Row="0" RibbonStyle="Office2010">
-            <dxr:RibbonControl.ToolbarItems>
-                <dxb:BarButtonItemLink BarItemName="newItem"/>
-            </dxr:RibbonControl.ToolbarItems>
+        <dxr:RibbonControl ShowApplicationButton="False" RibbonStyle="Office2019">
             <dxr:RibbonDefaultPageCategory>
                 <dxr:RibbonPage Caption="Home">
                     <dxr:RibbonPageGroup>
@@ -34,17 +32,18 @@
                 </dxr:RibbonPage>
             </dxr:RibbonDefaultPageCategory>
         </dxr:RibbonControl>
+
         <dxg:GridControl Grid.Row="1" ItemsSource="{Binding Employees}" Name="grid">
-            <dxg:GridControl.Columns>
-                <dxg:GridColumn FieldName="EmployeeID" />
-                <dxg:GridColumn FieldName="Name" />
-                <dxg:GridColumn FieldName="Department"/>
-            </dxg:GridControl.Columns>
+            <dxg:GridColumn FieldName="EmployeeID" />
+            <dxg:GridColumn FieldName="Name" />
+            <dxg:GridColumn FieldName="Department"/>
+            
             <dxg:GridControl.TotalSummary>
                 <dxg:GridSummaryItem SummaryType="Count" Alignment="Right" />
             </dxg:GridControl.TotalSummary>
+            
             <dxg:GridControl.View>
-                <dxg:TableView AllowPerPixelScrolling="True" ShowFixedTotalSummary="True">
+                <dxg:TableView ShowFixedTotalSummary="True">
                     <dxmvvm:Interaction.Behaviors>
                         <dxrudex:GridReportManagerService x:Name="EmployeesReportService"/>
                     </dxmvvm:Interaction.Behaviors>

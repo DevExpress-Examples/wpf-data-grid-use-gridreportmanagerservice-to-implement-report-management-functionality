@@ -1,14 +1,11 @@
-Imports DevExpress.Mvvm.DataAnnotations
-
 Namespace ReportManagerServiceExample.ViewModels
 
-    <POCOViewModel>
     Public Class EmployeeViewModel
 
-        Public Overridable Property EmployeeID As Integer
+        Public Property EmployeeID As Integer
 
-        Public Overridable Property Name As String
+        Public Property Name As String
 
-        Public Overridable Property Department As String
+        Public Property Department As String
     End Class
 End Namespace
