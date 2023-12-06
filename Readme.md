@@ -23,5 +23,6 @@ This example uses [GridReportManagerService](https://docs.devexpress.com/WPF/115
 
 ## More Examples
 
+* [Use WPF StandaloneReportManagerService to Implement the Report Management Functionality](https://github.com/DevExpress-Examples/how-to-implement-the-report-management-functionality-using-standalonereportmanagerservice-t315620)
 * [WPF Data Grid - Print and Export the GridControl](https://github.com/DevExpress-Examples/wpf-data-grid-print-and-export-data)
 * [WPF Data Grid - Customize the Appearance of Printed/Exported Information](https://github.com/DevExpress-Examples/wpf-data-grid-customize-print-export-appearance)
