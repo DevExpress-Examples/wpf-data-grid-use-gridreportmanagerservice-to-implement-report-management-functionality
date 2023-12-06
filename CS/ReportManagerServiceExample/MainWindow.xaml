@@ -1,9 +1,9 @@
-<dxr:DXRibbonWindow   
+<dx:ThemedWindow   
     x:Class="ReportManagerServiceExample.MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:dxr="http://schemas.devexpress.com/winfx/2008/xaml/ribbon"
+    xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
     xmlns:Views="clr-namespace:ReportManagerServiceExample.Views"
     Title="ReportManagerService Example" Height="450" Width="725">
     <Views:MainView />
-</dxr:DXRibbonWindow>
+</dx:ThemedWindow>

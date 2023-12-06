@@ -1,10 +1,7 @@
-﻿using DevExpress.Mvvm.DataAnnotations;
-
-namespace ReportManagerServiceExample.ViewModels {
-    [POCOViewModel]
+﻿namespace ReportManagerServiceExample.ViewModels {
     public class EmployeeViewModel {
-        public virtual int EmployeeID { get; set; }
-        public virtual string Name { get; set; }
-        public virtual string Department { get; set; }
+        public int EmployeeID { get; set; }
+        public string Name { get; set; }
+        public string Department { get; set; }
     }
 }
