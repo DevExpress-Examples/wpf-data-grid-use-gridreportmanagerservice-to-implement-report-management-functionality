@@ -4,11 +4,11 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 
-# WPF Data Grid - Use the GridReportManagerService to Implement the Report Management Functionality
+# WPF Data Grid - Use GridReportManagerService to Implement the Report Management Functionality
 
 This example uses [GridReportManagerService](https://docs.devexpress.com/WPF/115300/mvvm-framework/services/predefined-set/report-services/gridreportmanagerservice) with [ReportManagerBehavior](https://docs.devexpress.com/WPF/DevExpress.Xpf.Reports.UserDesigner.Extensions.ReportManagerBehavior) to allow users to create and manage reports.
 
-![image](https://github.com/DevExpress-Examples/how-to-implement-the-report-management-functionality-by-using-gridreportmanagerservice-t320584/assets/65009440/c02b1102-1a0f-4bc3-b4d9-90fdfa1cbb72)
+![image](https://github.com/DevExpress-Examples/how-to-implement-the-report-management-functionality-by-using-gridreportmanagerservice-t320584/assets/65009440/c02b1102-1a0f-4bc3-b4d9-90fdfa1cbb72) 
 
 ## Files to Review
 
