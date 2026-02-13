@@ -28,7 +28,7 @@ This example uses [GridReportManagerService](https://docs.devexpress.com/WPF/115
 * [WPF Data Grid - Print and Export the GridControl](https://github.com/DevExpress-Examples/wpf-data-grid-print-and-export-data)
 * [WPF Data Grid - Customize the Appearance of Printed/Exported Information](https://github.com/DevExpress-Examples/wpf-data-grid-customize-print-export-appearance)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-use-gridreportmanagerservice-to-implement-report-management-functionality&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-data-grid-use-gridreportmanagerservice-to-implement-report-management-functionality&~~~was_helpful=no)
 
